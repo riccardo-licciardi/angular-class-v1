@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-figlio2',
@@ -7,8 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Figlio2Component implements OnInit {
 
-  constructor() { }
+  numero:number=10
+@Output() evento= new EventEmitter<number>();
+  
+constructor() { }
 
+emetti(){
+  this.evento.emit(this.numero)
+}
   ngOnInit(): void {
   }
 

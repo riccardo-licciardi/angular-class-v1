@@ -6,7 +6,7 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./figlio1.component.scss']
 })
 export class Figlio1Component implements OnInit {
-  @Input() valorePadre; 
+  @Input() valorePadre: any; 
   constructor() { }
 
   ngOnInit(): void {
