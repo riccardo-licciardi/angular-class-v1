@@ -8,7 +8,7 @@ import { Component, Output } from '@angular/core';
 export class AppComponent {
   title = 'Stretta la soglia, larga la via';
 
-eventoPreso= Number;
+eventoPreso= Number ;
 
 prendiEvento(numero: any){
 this.eventoPreso=numero
