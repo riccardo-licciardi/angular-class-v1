@@ -1,6 +1,6 @@
 <h1>{{title}}</h1>
-
+<p>{{}}</p>
 
 <app-figlio1 [valorePadre]='title'></app-figlio1>
 
-<app-figlio2 (evento)='prendiEvento($event)'></app-figlio2>
+<app-figlio2 (stampa)="intercettaEventoFiglio2($event)"></app-figlio2>

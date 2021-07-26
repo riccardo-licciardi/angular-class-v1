@@ -6,15 +6,17 @@ import { Component, EventEmitter, OnInit, Output } from '@angular/core';
   styleUrls: ['./figlio2.component.scss']
 })
 export class Figlio2Component implements OnInit {
-
-  numero:number=10
-@Output() evento= new EventEmitter<number>();
   
+  @Output() motivati=new EventEmitter<string>()
+  
+  muoviti:string='Cerco sempre di fare ciò che non sono capace di fare, per imparare come farlo'
+
 constructor() { }
 
-emetti(){
-  this.evento.emit(this.numero)
+stampa(value:string){
+  this.motivati.emit(value)
 }
+
   ngOnInit(): void {
   }
 
