@@ -7,17 +7,17 @@ import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 })
 export class Figlio2Component implements OnInit {
   
-  @Output() motivati=new EventEmitter<string>()
-  
-  muoviti:string='Cerco sempre di fare ciò che non sono capace di fare, per imparare come farlo'
+   citazione:string='Cerco sempre di fare ciò che non sono capace di fare, per imparare come farlo'
+
+  @Output() evento=new EventEmitter<string>();
 
 constructor() { }
 
-stampa(value:string){
-  this.motivati.emit(value)
+emetti(){
+  this.evento.emit(this.citazione)
 }
 
-  ngOnInit(): void {
+  ngOnInit(): void { 
   }
 
 }
