@@ -3,7 +3,8 @@
 <p [ngClass]="{'classeTest': x}">Dividi et impera !</p>
 <button (click)="cambiaBoolean()">Cambia</button>
 
-<div>
+<button (click)="cambiaIf()">Hudini</button>
+<div *ngIf="y" [ngClass]="{'classeTestRed': true}">
     <p [ngClass]="{'classeTest': x}">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at maximus ex, ac dignissim turpis. Maecenas id nisl quis nisl cursus hendrerit. Suspendisse ante dolor, condimentum at mi sit amet, mollis dapibus lacus. Donec efficitur placerat ultricies.
         Donec et justo at justo aliquam hendrerit sed sit amet diam.</p>
     <p [ngClass]="{'classeTest': x}">Aenean ut libero vitae nulla aliquam malesuada vitae quis ex. Donec faucibus, turpis vitae gravida elementum, tellus elit laoreet nulla, vitae pellentesque erat sem eget eros. </p>
@@ -12,5 +13,13 @@
     <p [ngClass]="{'classeTest': x}">Curabitur varius aliquet magna, non posuere erat faucibus ultricies. Morbi fermentum luctus urna eget porta. Donec placerat luctus sapien, in posuere mi viverra vel.</p>
     <p [ngClass]="{'classeTest': x}">Aenean placerat placerat felis a faucibus. Fusce iaculis tellus vel lacus luctus maximus. Sed eu nibh nisl. Etiam finibus, neque eget elementum efficitur, lectus urna semper est, at cursus ligula risus at nisl. Aliquam tempor mi nisi, et sollicitudin
         elit vulputate ac.</p>
+</div>
 
+<div [ngClass]="{'classeTest': true}" *ngFor="let riccardo of lista">
+    {{riccardo.nome}} {{riccardo.cognome}} {{riccardo.professione}}
+</div>
+
+<div [ngSwitch]="'E questo che minchia guada ?'" [ngClass]="{'classeTestGreen': true}">
+    <p *ngSwitchCase="'Gianluca! Dai cazzo, nun poi esse cosi stronzo'" [ngClass]="{'classeTest': x}">Gianluca! Dai cazzo, nun poi esse cosi stronzo</p>
+    <p *ngSwitchCase="'E questo che minchia guada ?'" [ngClass]="{'classeTest': x}">E questo che minchia guada ?</p>
 </div>
