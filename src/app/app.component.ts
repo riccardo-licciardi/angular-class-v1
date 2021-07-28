@@ -1,4 +1,5 @@
 import { Component, Output, EventEmitter } from '@angular/core';
+import { Caratteristiche } from './Modelli Interface/Interface';
 
 @Component({
   selector: 'app-root',
@@ -9,9 +10,16 @@ export class AppComponent {
 
   title = 'Stretta la soglia, larga la via';
 
-  eventoPreso!: string;
-  prendiEvento(){
-this.eventoPreso=citazione
-  }
-
+riccardo: Caratteristiche={
+  capelli:`rossi`,
+  altezza:184,
+  bello:true 
 }
+x: boolean= false
+
+cambiaBoolean(){
+  this.x=!this.x
+}
+}
+
+

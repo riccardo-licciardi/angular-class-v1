@@ -9,13 +9,7 @@ export class Figlio2Component implements OnInit {
   
    citazione:string='Cerco sempre di fare ciò che non sono capace di fare, per imparare come farlo'
 
-  @Output() evento=new EventEmitter<string>();
-
 constructor() { }
-
-emetti(){
-  this.evento.emit(this.citazione)
-}
 
   ngOnInit(): void { 
   }
