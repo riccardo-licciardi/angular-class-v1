@@ -8,7 +8,7 @@ import { Persona } from '../Modelli Interface/Interface';
 })
 export class FormComponent implements OnInit {
   
-  persona: Persona={
+  riccardo: Persona={
   capelli:`rossi`,
   altezza:184,
   eta:28 

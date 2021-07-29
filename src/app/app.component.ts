@@ -1,5 +1,6 @@
 import { Component, Output, EventEmitter } from '@angular/core';
 import { Persona } from './Modelli Interface/Interface';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-root',
@@ -31,7 +32,6 @@ lista: any[]=[
 {cognome:"Licciardi"},
 {professione:"Schiavo presso Antichi Egizi"}
 ]
-
 }
 
 
