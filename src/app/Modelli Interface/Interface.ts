@@ -1,5 +1,5 @@
-export interface Caratteristiche{
+export interface Persona{
     capelli: string;
     altezza: number;
-    bello: boolean;
+    eta: number;
 }

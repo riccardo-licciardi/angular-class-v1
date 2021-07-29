@@ -1,5 +1,5 @@
 import { Component, Output, EventEmitter } from '@angular/core';
-import { Caratteristiche } from './Modelli Interface/Interface';
+import { Persona } from './Modelli Interface/Interface';
 
 @Component({
   selector: 'app-root',
@@ -10,10 +10,10 @@ export class AppComponent {
 
   title = 'Stretta la soglia, larga la via';
 
-riccardo: Caratteristiche={
+persona: Persona={
   capelli:`rossi`,
   altezza:184,
-  bello:true 
+  eta:28 
 }
 
 x: boolean= false
@@ -31,6 +31,7 @@ lista: any[]=[
 {cognome:"Licciardi"},
 {professione:"Schiavo presso Antichi Egizi"}
 ]
+
 }
 
 
