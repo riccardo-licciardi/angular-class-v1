@@ -1,6 +1,6 @@
 import { Component, Output, EventEmitter } from '@angular/core';
-import { Persona } from './Modelli Interface/Interface';
-import { FormsModule } from '@angular/forms';
+
+
 
 @Component({
   selector: 'app-root',
@@ -10,12 +10,6 @@ import { FormsModule } from '@angular/forms';
 export class AppComponent {
 
   title = 'Stretta la soglia, larga la via';
-
-persona: Persona={
-  capelli:`rossi`,
-  altezza:184,
-  eta:28 
-}
 
 x: boolean= false
 cambiaBoolean(){

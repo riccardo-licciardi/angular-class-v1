@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Persona } from '../Modelli Interface/Interface';
 
 @Component({
   selector: 'app-form',
@@ -7,19 +6,10 @@ import { Persona } from '../Modelli Interface/Interface';
   styleUrls: ['./form.component.scss']
 })
 export class FormComponent implements OnInit {
-  
-  riccardo: Persona={
-  capelli:`rossi`,
-  altezza:184,
-  eta:28 
-}
+
   constructor() { }
-  
+
   ngOnInit(): void {
   }
 
-
-invia(){
-  
-}
 }
