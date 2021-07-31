@@ -1,5 +1,7 @@
-<form>
-    <input [(ngModel)]="persona.nome" name="nome">
-    <input [(ngModel)]="persona.cognome" name="cognome">
-    <input [(ngModel)]="persona.eta" name="eta">
+<form [formGroup]="fg">
+    <input type="text" formControllName="nome">
+    <input type="text" formControllName="cognome">
+    <input type="text" formControllName="eta">
+
+    <button (click)="leggi(fg.value)">Invia</button>
 </form>

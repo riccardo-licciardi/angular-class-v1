@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { Figlio1Component } from './figlio1/figlio1.component';
 import { Figlio2Component } from './figlio2/figlio2.component';
 import { FormComponent } from './form/form.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -15,11 +16,13 @@ import { FormComponent } from './form/form.component';
     Figlio2Component,
     FormComponent,
     
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Caratteristiche } from './interfaccia_class';
+import { FormGroup } from '@angular/forms';
+import { FormControl } from '@angular/forms';
 
 @Component({
   selector: 'app-form',
@@ -7,8 +8,19 @@ import { Caratteristiche } from './interfaccia_class';
   styleUrls: ['./form.component.scss']
 })
 export class FormComponent implements OnInit {
-  persona: Caratteristiche = new Caratteristiche;
-  constructor() { }
+  
+  fg: FormGroup;
+
+  constructor() {
+this.fg= new FormGroup({
+
+nome:new FormControl(),
+cognome:new FormControl(),
+eta:new FormControl()
+  })
+}
+
+leggi(x: any){console.log(x)}
 
   ngOnInit(): void {
   }
