@@ -17,12 +17,12 @@ this.fg= new FormGroup({
 nome:new FormControl(),
 cognome:new FormControl(),
 eta:new FormControl()
-  })
+});
 }
 
 leggi(x: any){console.log(x)}
 
-  ngOnInit(): void {
-  }
+ngOnInit(): void {
+}
 
 }
